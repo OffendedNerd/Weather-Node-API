@@ -1,0 +1,143 @@
+body {
+  background: #238023;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: px 0;
+  font-weight: 200;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+.form-group {
+  display: block;
+  -webkit-margin-start: 425px;
+  -webkit-margin-end: 725px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
+}
+.containere {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80vh;
+  padding-left: 20px;
+}
+
+.weather {
+  background: #343a40;
+  position: center;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  border-radius: 50px; /* Increase the border-radius for a more rounded shape */ /* Add a box shadow for a modern look */
+}
+.weather .current {
+  position: center;
+  overflow: hidden;
+  min-height: 100px;
+  background: #343a40;
+  padding: 20px;
+  text-shadow: 0px 0px;
+  border-radius: 20px; /* Apply the same border-radius to make it rounded */
+}
+
+.weather .current .info {
+  position: center;
+  overflow: hidden;
+  min-height: 100px;
+  background: #343a40;
+  border-radius: 20px; /* Apply the same border-radius to make it rounded */
+}
+.containere:hover {
+  background-color: #343a40; /* Change background color when hovering */
+}
+/* Dynamic styles */
+.weather .current .info .city {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.weather .current .info .temp {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.weather .current .info .wind {
+  font-size: 18px;
+  color: #fff;
+}
+
+.weather .current .icon {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather .current .icon .wi-day-sunny {
+  font-size: 48px;
+  color: #fff;
+}
+
+.info .city {
+  font-size: 24px;
+  font-weight: 200;
+  position: relative;
+  color: #fff;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.info .city:after {
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.temp {
+  font-size: 73px;
+  color: #fff;
+  display: block;
+  position: relative;
+  font-weight: bold;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+}
+
+.wind svg {
+  width: 18px;
+  height: 18px;
+  margin-top: 20px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.wind span {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+}
